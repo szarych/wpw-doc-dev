@@ -11,6 +11,14 @@
 
     
     <url>
+     <loc>http://localhost:8000//getting-started/</loc>
+     <lastmod>2017-08-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>http://localhost:8000//the-flows/</loc>
      <lastmod>2017-08-24</lastmod>
      <changefreq>daily</changefreq>

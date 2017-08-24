@@ -10,7 +10,7 @@
         <meta name="description" content="Worldpay Within website">
       
       
-        <link rel="canonical" href="http://localhost:8000/the-flows/">
+        <link rel="canonical" href="http://localhost:8000/getting-started/">
       
       
         <meta name="author" content="Worldpay Within">
@@ -22,7 +22,7 @@
     
     
       
-        <title>The Flows - Worldpay Within</title>
+        <title>Getting started - Worldpay Within</title>
       
     
     
@@ -96,7 +96,7 @@
             
               
             
-            The Flows
+            Getting started
           
         </span>
       </div>
@@ -215,18 +215,6 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../getting-started/" title="Getting started" class="md-nav__link">
-      Getting started
-    </a>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
@@ -234,47 +222,44 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        The Flows
+        Getting started
       </label>
     
-    <a href="./" title="The Flows" class="md-nav__link md-nav__link--active">
-      The Flows
+    <a href="./" title="Getting started" class="md-nav__link md-nav__link--active">
+      Getting started
     </a>
     
       
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-flows-diagram" title="The Flows diagram" class="md-nav__link">
-    The Flows diagram
+  <a href="#get-the-sdk-software-development-kit-from-the-github-repository" title="Get the SDK (software development kit) from the Github repository" class="md-nav__link">
+    Get the SDK (software development kit) from the Github repository
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-consumer-flow" title="The Consumer flow" class="md-nav__link">
-    The Consumer flow
+  <a href="#download-the-core-iot-component" title="Download the core Iot component" class="md-nav__link">
+    Download the core Iot component
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-producer-flow" title="The Producer flow" class="md-nav__link">
-    The Producer flow
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-calls" title="API calls" class="md-nav__link">
-    API calls
+  <a href="#setup-your-environment-worldpay-within" title="Setup your environment Worldpay Within" class="md-nav__link">
+    Setup your environment Worldpay Within
   </a>
   
 </li>
@@ -285,6 +270,18 @@
   
 </nav>
     
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../the-flows/" title="The Flows" class="md-nav__link">
+      The Flows
+    </a>
   </li>
 
     
@@ -338,34 +335,29 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-flows-diagram" title="The Flows diagram" class="md-nav__link">
-    The Flows diagram
+  <a href="#get-the-sdk-software-development-kit-from-the-github-repository" title="Get the SDK (software development kit) from the Github repository" class="md-nav__link">
+    Get the SDK (software development kit) from the Github repository
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-consumer-flow" title="The Consumer flow" class="md-nav__link">
-    The Consumer flow
+  <a href="#download-the-core-iot-component" title="Download the core Iot component" class="md-nav__link">
+    Download the core Iot component
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-producer-flow" title="The Producer flow" class="md-nav__link">
-    The Producer flow
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-calls" title="API calls" class="md-nav__link">
-    API calls
+  <a href="#setup-your-environment-worldpay-within" title="Setup your environment Worldpay Within" class="md-nav__link">
+    Setup your environment Worldpay Within
   </a>
   
 </li>
@@ -384,183 +376,32 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/szarych/wpw-doc-dev/edit/master/docs/the-flows.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/szarych/wpw-doc-dev/edit/master/docs/getting-started.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                  <h1>The Flows</h1>
-                
-                <p>There are certain flows that are allowable for the consumer and producer, and this flow should be adhered to when utilising the Worldpay Within SDK. What follows is a diagram of the flow, and then a detailed breakdown of the steps of the flows, what they do; and explicitly the order in which they should be followed.</p>
-<p>The devices are not synchronised by the SDK in any way - so it is up to the developer of the app that sits on top of the SDK to call the Worldpay Within API in the correct order. This is the responsibility of the developer. However if the order below is adhered to then the outcome of the functionality will be as desired.</p>
-<h2 id="the-flows-diagram">The Flows diagram<a class="headerlink" href="#the-flows-diagram" title="Permanent link">&para;</a></h2>
-<p><img alt="alt text" src="../images/the-flows.svg" title="The flows of the producer and consumer" /></p>
-<figcaption>The flows of the producer and consumer</figcaption>
-
-<h2 id="the-consumer-flow">The Consumer flow<a class="headerlink" href="#the-consumer-flow" title="Permanent link">&para;</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This is the flow of the consumer, please note that these flow steps map to the interface either in Go or in the Wrapper - e.g. in Java this is fully documented in the javadoc.</p>
-</div>
-<table>
-<thead>
-<tr>
-<th>Step in Flow</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. SETUP</td>
-<td>Setups up the device</td>
-</tr>
-<tr>
-<td>2. DEVICE DISCOVERY</td>
-<td>Discover devices that are broadcasting messages</td>
-</tr>
-<tr>
-<td>3. (CHOOSE MESSAGE)</td>
-<td>Choose the message, then use that information in the following steps</td>
-</tr>
-<tr>
-<td>4. INIT CONSUMER</td>
-<td>Initialises the device as a consumer</td>
-</tr>
-<tr>
-<td>5. REQUEST SERVICES</td>
-<td>Request service messages from the device that is broadcasting, which lists what services it's offering</td>
-</tr>
-<tr>
-<td>6. GET SERVICE PRICES</td>
-<td>Get's the prices for the service you are interested in</td>
-</tr>
-<tr>
-<td>7. SELECT SERVICE</td>
-<td>Selects the service the device wants to consume</td>
-</tr>
-<tr>
-<td>8. MAKE PAYMENT</td>
-<td>Makes a payment for the service that is chosen</td>
-</tr>
-<tr>
-<td>9. BEGIN SERVICE DELIVERY</td>
-<td>Starts the process / flow to consume the service based on the service token received</td>
-</tr>
-<tr>
-<td>10. STOP SERVICE DELIVERY</td>
-<td>Called to tell the other thing that it has completed it's consumption of the service</td>
-</tr>
-</tbody>
-</table>
-<h2 id="the-producer-flow">The Producer flow<a class="headerlink" href="#the-producer-flow" title="Permanent link">&para;</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This is the flow of the producer, please note that these flow steps map to the interface either in Go or in the Wrapper - e.g. in Java this is fully documented in the javadoc.</p>
-</div>
-<table>
-<thead>
-<tr>
-<th>Step in Flow</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. SETUP</td>
-<td>Setups the device</td>
-</tr>
-<tr>
-<td>2A. ADD SERVICE</td>
-<td>Adds a service to the producer</td>
-</tr>
-<tr>
-<td>2B. REMOVE SERVICE</td>
-<td>Remvoves a service from the producer</td>
-</tr>
-<tr>
-<td>3. INIT PRODUCER</td>
-<td>Initialises the producer</td>
-</tr>
-<tr>
-<td>4A. START BROADCAST</td>
-<td>Starts the producer broadcasting it's service message</td>
-</tr>
-<tr>
-<td>4B. STOP BROADCAST</td>
-<td>Stops the producer from broadcasting it's service message</td>
-</tr>
-</tbody>
-</table>
-<h2 id="api-calls">API calls<a class="headerlink" href="#api-calls" title="Permanent link">&para;</a></h2>
-<p>The steps in the flow neatly map to the api flows, here is some further information about what they do:</p>
-<table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>setup</code></td>
-<td>Sets up the wrapper to be able to start communicating with the underlying SDK</td>
-</tr>
-<tr>
-<td><code>addService</code></td>
-<td>Adds a service of type WWSerive to the producer, used if the device you are operating on is a producer, if added to a device you intend as a consumer this will give that device producer functionality</td>
-</tr>
-<tr>
-<td><code>removeService</code></td>
-<td>This removes the service from the producer</td>
-</tr>
-<tr>
-<td><code>initConsumer</code></td>
-<td>This initiates the device as a consumer, which enables it to find services, negotiate prices, make payments and receive services</td>
-</tr>
-<tr>
-<td><code>initProducer</code></td>
-<td>This initiates the device as a producer / or initialises the devices producer capability</td>
-</tr>
-<tr>
-<td><code>getDevice</code></td>
-<td>This is able to provide back details of the the current device that the SDK is running on, and it credentials / information</td>
-</tr>
-<tr>
-<td><code>startServiceBroadcast</code></td>
-<td>This enables the producer device to start broadcasting itself via UDP broadcast over the network to notifiy devices it is available to be consumed</td>
-</tr>
-<tr>
-<td><code>stopServiceBroadcast</code></td>
-<td>This method stops the SDK from broadcasting the current service messages that it is broadcasting</td>
-</tr>
-<tr>
-<td><code>deviceDiscovery</code></td>
-<td>This enables the consumer device to discovery other devices (producers) on the network that are UDP broadcasting</td>
-</tr>
-<tr>
-<td><code>requestServices</code></td>
-<td>Get a list of services that are avaialble from the broadcasting device</td>
-</tr>
-<tr>
-<td><code>getServicePrices</code></td>
-<td>This is used by the consumer to get the list of prices associated with a particular serviceId</td>
-</tr>
-<tr>
-<td><code>selectService</code></td>
-<td>Selection of a service is performed by the consumer, providing details of the service, the amount and at what price point it wants to purchase the service</td>
-</tr>
-<tr>
-<td><code>makePayment</code></td>
-<td>This allows the consumer to request a payment be made at the producer device, by providing the total price response object as the request. The producer will then make the payment (or attempt to) and send back a Payment Response detailing whether it was successful or not</td>
-</tr>
-<tr>
-<td><code>beginServiceDelivery</code></td>
-<td>This begins the service delivery, and is requested by the consumer, and will proceed as long as the correct information is provided to the producer. If the correct credentials are passed through, then the producer will start releasing the service known as a 'trusted trigger'</td>
-</tr>
-<tr>
-<td><code>endServiceDelivery</code></td>
-<td>This ends the service delivery, a request initiated by the consumer</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
+<p>We are an open source project, and some of our internal dev terms may spill out to the external SDK - apologies for this. But think of the SDK you download as being the API to a set of really cool services that allow smart devices to pay for services from oneanother</p>
+<p>What you get from the SDK you download from our git repo, is access to the API in all the supported languages (we refer this as the 'wrapper'), you will still need to get the core IoT component from the releases (we refer to this as the 'RPC-agent'). <a href="internal-structure.html">If you're interested further on the internal architectcure of the project check this out</a>.</p>
+<h2 id="get-the-sdk-software-development-kit-from-the-github-repository">Get the SDK (software development kit) from the Github repository<a class="headerlink" href="#get-the-sdk-software-development-kit-from-the-github-repository" title="Permanent link">&para;</a></h2>
+<p>Please either download the repo, or clone the repo from Github, <a href="https://github.com/WPTechInnovation/worldpay-within-sdk">the github repo for Worldpay Within can be found here</a></p>
+<h2 id="download-the-core-iot-component">Download the core Iot component<a class="headerlink" href="#download-the-core-iot-component" title="Permanent link">&para;</a></h2>
+<p>The Iot core component is sometimes called the "RPC-Agent" (and sometimes referred to as the binaries) from the Github Repository</p>
+<ol>
+<li>Go to the releases page here <a href="https://github.com/WPTechInnovation/worldpay-within-sdk/releases"><a href="https://github.com/WPTechInnovation/worldpay-within-sdk/releases">https://github.com/WPTechInnovation/worldpay-within-sdk/releases</a></a></li>
+<li>Download the zip file entitled 'wpwithin-&lt;version_number&gt;-bins.tar.gz' e.g. wpwithin-0.4-bins.tar.gz - make sure to get the latest one though!</li>
+<li>You don't need all the files in this download! Oh no, you'll just need the ones for the computer that you are developing on, and thing (smart device) that you are going to run it on.</li>
+<li>Unzip the file rpc-agent-bins-&lt;version_number&gt;.tar.gz</li>
+<li>Choose the RPC-agent file appropriate to your Thing or development machine.</li>
+</ol>
+<h2 id="setup-your-environment-worldpay-within">Setup your environment Worldpay Within<a class="headerlink" href="#setup-your-environment-worldpay-within" title="Permanent link">&para;</a></h2>
+<p>You'll need to drop the core IoT component (RPC-agent file) into the appropriate place in the SDK (or wrapper directory).</p>
+<p>Follow the instructions for each supported language on where to place the core IoT component (RPC-agent file) and what to call it. The instructions will also let you know if there are any other pre-requisites to install on your device before you get started.</p>
+<p><a class="md-button" href="https://github.com/WPTechInnovation/worldpay-within-sdk/tree/master/wrappers/java">Java</a>
+<a class="md-button" href="dotnet.html">.NET</a>
+<a class="md-button" href="getting-started-with-go.html">Go</a>
+<a class="md-button" href="getting-started-with-go.html">Go</a>
+<a class="md-button" href="nodejs.html">Node.js</a>
+<a class="md-button" href="python27.html">Python (2.7)</a></p>
                 
                   
                 
@@ -579,7 +420,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../getting-started/" title="Getting started" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href=".." title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -588,19 +429,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Getting started
+                Overview
               </span>
             </div>
           </a>
         
         
-          <a href="../architecture/" title="Architecture" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../the-flows/" title="The Flows" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Architecture
+                The Flows
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
