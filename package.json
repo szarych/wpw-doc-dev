@@ -29,7 +29,7 @@
     "help": "scripts/help",
     "lint": "scripts/lint",
     "start": "scripts/start",
-    "travis": "scripts/travis"
+    "travis": "yarn run travis"
   },
   "dependencies": {
     "node-sass": "^3.7.0",
