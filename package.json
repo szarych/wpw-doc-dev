@@ -29,7 +29,7 @@
     "help": "scripts/help",
     "lint": "scripts/lint",
     "start": "scripts/start",
-    "travis": "sh travis.sh"
+    "travis": "bash ./travis.sh"
   },
   "dependencies": {
     "node-sass": "^3.7.0",
