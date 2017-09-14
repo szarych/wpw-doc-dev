@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://localhost:8000//</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>http://localhost:8000//introduction/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +20,7 @@
     
     <url>
      <loc>http://localhost:8000//atdc/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -28,7 +28,7 @@
     
     <url>
      <loc>http://localhost:8000//getting-started/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -36,7 +36,7 @@
     
     <url>
      <loc>http://localhost:8000//getit/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -44,7 +44,7 @@
     
     <url>
      <loc>http://localhost:8000//the-flows/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -52,7 +52,7 @@
     
     <url>
      <loc>http://localhost:8000//api-spec/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -60,7 +60,7 @@
     
     <url>
      <loc>http://localhost:8000//architecture/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -68,7 +68,7 @@
     
     <url>
      <loc>http://localhost:8000//internal-structure/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -76,7 +76,7 @@
     
     <url>
      <loc>http://localhost:8000//hackathons/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -84,7 +84,7 @@
     
     <url>
      <loc>http://localhost:8000//quick-start/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -92,7 +92,7 @@
     
     <url>
      <loc>http://localhost:8000//sample-service-messaging/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -101,28 +101,36 @@
         
     <url>
      <loc>http://localhost:8000//dotnet/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://localhost:8000//getting-started-with-go/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://localhost:8000//nodejs/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://localhost:8000//python27/</loc>
-     <lastmod>2017-09-12</lastmod>
+     <lastmod>2017-09-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
+    
+
+    
+    <url>
+     <loc>http://localhost:8000//documentation/</loc>
+     <lastmod>2017-09-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
     
 
 </urlset>
