@@ -1,5 +1,4 @@
 # Theme Documentation
-
 ## Blockquotes
 
 > Morbi eget dapibus felis. Vivamus venenatis porttitor tortor sit amet rutrum.
