@@ -28,7 +28,7 @@ set -e
 
 # Deploy documentation to GitHub pages
 if [ "$TRAVIS_BRANCH" == "master" -a "$TRAVIS_PULL_REQUEST" == "false" ]; then
-  REMOTE="https://df284ea899ea8e596b35f76afacfb81800e507a9@github.com/szarych/wpw-doc-dev"
+  REMOTE="https://${GH_TOKEN}@github.com/szarych/wpw-doc-dev"
 
   # Set configuration for repository and deploy documentation
   git config --global user.name "${GH_NAME}"
