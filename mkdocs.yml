@@ -85,6 +85,8 @@ pages:
     - Go: getting-started-with-go.md
     - Node.js: nodejs.md
     - Python 2.7: python27.md
+
+  - hidden: documentation.md
   
   # hide from navigation
   # - hidden: nodejs.md
