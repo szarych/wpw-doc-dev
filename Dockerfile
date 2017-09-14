@@ -25,7 +25,7 @@ MAINTAINER Martin Donath <martin.donath@squidfunk.com>
 WORKDIR /tmp
 
 # Copy files necessary for build
-COPY material material
+COPY worldpay worldpay
 COPY MANIFEST.in MANIFEST.in
 COPY package.json package.json
 COPY requirements.txt requirements.txt
