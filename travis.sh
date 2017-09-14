@@ -24,7 +24,7 @@
 set -e
 
 # Run build and terminate on error
-"$(yarn bin)"/gulp build --clean --optimize --revision --no-lint
+"$(yarn bin)"/gulp build --clean --optimize --revision
 
 # Deploy documentation to GitHub pages
 if [ "$TRAVIS_BRANCH" == "master" -a "$TRAVIS_PULL_REQUEST" == "false" ]; then
